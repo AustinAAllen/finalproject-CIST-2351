@@ -1,0 +1,267 @@
+/*Navigation Begins*/
+nav { 
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}  
+
+
+a:link {
+    color:#52ab989a;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+}  
+/*Navigation Ends*/
+
+
+/*Body*/
+body {
+    background-color: rgb(74, 91, 97);
+    background-image: radial-gradient( rgb(#c8d8e4,#f2f2f2) );
+    color: rgb(249, 249, 255);
+    padding-right: 1em;
+    overflow-x: hidden;
+}
+/*Body ends*/
+
+
+
+
+
+/*contact form*/
+pre {
+    display: block;
+    font-size: 24px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 2px; 
+    border: 1px solid rgba(204, 204, 204, 0); 
+    border-radius: 5px; 
+    box-sizing: border-box;
+    margin-top: 8px; 
+    margin-bottom: 13px; 
+    resize: vertical;
+}
+
+input[type=password], select, textarea {
+    width: 100%; 
+    padding: 2px; 
+    border: 1px solid rgba(204, 204, 204, 0); 
+    border-radius: 5px; 
+    box-sizing: border-box;
+    margin-top: 8px; 
+    margin-bottom: 13px; 
+    resize: vertical;
+}
+
+input[type=email], select, textarea {
+    width: 100%; 
+    padding: 2px; 
+    border: 1px solid rgba(204, 204, 204, 0); 
+    border-radius: 5px; 
+    box-sizing: border-box;
+    margin-top: 8px; 
+    margin-bottom: 13px; 
+    resize: vertical;
+}
+
+input[type=submit], select, textarea {
+    background-color: rgba(161, 0, 0, 0.315);
+    color: rgba(255, 255, 255, 0.514);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+
+input[type=submit]:hover {
+    background-color: #f5000050;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #52ab989a;
+    padding: 10px;
+    opacity: 20;
+}
+
+
+/*contact form ends*/
+
+
+
+
+
+
+/*grid Container*/
+.item1 {
+    grid-area: item1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item2 {
+    grid-area: item2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item3 {
+    grid-area: item3;
+    margin: 1em;
+    font-family:'Montserrat', sans-serif; 
+}
+
+.grid-container1 {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    'item1 item2' 
+    'item1 item3' ;
+    grid-gap: 1em;
+    min-height: 100vh;
+}
+          
+.grid-container2 {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    'item1 item1 item1 item2' 
+    'item1 item1 item1 item3';
+    grid-gap: 1em;
+    min-height: 100vh;
+}
+
+.grid-container3 {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    'item1 item1 item1 item2' 
+    'item1 item1 item1 item3' ;
+    grid-gap: 1em;
+    min-height: 100vh;
+}      
+            
+.grid-container4 {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    'item1 item1 item1 item2' 
+    'item1 item1 item1 item3' ;
+    grid-gap: 1em;
+    min-height: 100vh;
+}             
+            
+.grid-container5 {
+    font-family:'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    'item1 item1 item1 item1 item1 item2' 
+    'item1 item1 item1 item1 item1 item3' ;
+    grid-gap: 1em;
+    min-height: 100vh;
+}        
+
+.tickets-list {
+    text-align: left;
+}
+/*grid Container Ends*/
+
+
+/*headers, h1 , h4 */
+h2 {
+    text-align: center;
+    background-image: ;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #52ab989a;
+    color: #ffffff;
+    opacity: 20;
+    font-size: 3em; 
+    padding-right: 100em;
+    padding-left: 0em;
+    letter-spacing: .2em;
+    position: absolute;
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+    background-color: #52ab9870;
+    color: #ffffff;
+    opacity: 20;
+    font-size: 1em; 
+    padding-right: 4em;
+    padding-left: 8em;
+    letter-spacing: .2em;
+    border-radius: 10px;
+}
+
+/*headers, h1 , h4 ends*/
+
+
+
+
+footer  {
+    display: block;
+    color: white;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center; 
+    border-top: 2px solid #221811;
+    padding-bottom: 1em;
+}
+
+
+
+@media (max-width: 1000px) {
+    .grid-container1,
+    .grid-container2,
+    .grid-container3,
+    .grid-container4,
+    .grid-container5 {
+        grid-template-areas:
+            'item1'
+            'item2'
+            'item3';
+    }
+    .item1, .item2, .item3{min-width: 100%; background-image: none !important;}
+    h2 {
+		background-image: none !important;
+	}
+}
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
